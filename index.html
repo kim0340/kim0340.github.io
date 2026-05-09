@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>루씨 캐릭터 육성회</title>
+    <meta name="author" content="Class specific leveling" />
+    <meta name="keywords" content="게임육성, 아데나, 엘븐와퍼, 윈드워크, 악마의피, 아이템, 캐릭터, PC방, 리니지" />
+    <meta name="description" content="클래스별 캐릭터 육성" />
+    <meta property="og:title" content="루씨 캐리터 육성" />
+    <meta property="og:description" content="월간구독 루씨 캐릭터 육성" />
+    <meta property="og:url" content="https://linmade.co.kr/" />
+    <style>
+        /* 기본 스타일 및 중복 정리 */
+        body {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(5,5,5,1)), url('lineage.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0; padding: 0;
+            background-color: #050505; color: #fff;
+            font-family: 'Malgun Gothic', sans-serif; line-height: 1.6; text-align: center;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        .golden { color: #eeb03d; }
+
+        .main { padding: 80px 20px 30px; position: relative; }
+        .main h1 { font-size: 2.5rem; margin: 5px 0; color: #fff; line-height: 1.2; }
+        .main h1.title-gold { color: #eeb03d; }
+        .main p { font-size: 1.1rem; opacity: 0.8; word-break: keep-all; }
+        .logo { position: absolute; top: 0; left: 0; width: 150px; height: auto; }
+
+        .buttons { margin-top: 30px; display: flex; justify-content: center; }
+        .button {
+            padding: 12px 25px; border-radius: 5px; text-decoration: none;
+            font-weight: bold; color: #000; display: inline-flex; gap: 8px; align-items: center;
+        }
+        .button img { width: 24px; height: 24px; }
+        .kkaddok { background: #fee500; }
+
+        /* 그리드 시스템 최적화 */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr; /* 기본 1열 */
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .card {
+            background: rgba(17, 17, 17, 0.9); border: 1px solid #eeb03d; padding: 25px;
+            border-radius: 10px; text-align: left;
+        }
+        .card h2 { font-size: 1.3rem; border-bottom: 1px solid #444; padding-bottom: 10px; margin-bottom: 15px; }
+        .card ul { padding-left: 20px; }
+
+        [contenteditable="true"]:hover { background: rgba(255, 255, 255, 0.1); outline: 1px dashed #eeb03d; }
+
+        /* --- 미디어 쿼리 (반응형 구간) --- */
+        /* 1. 아주 작은 모바일 (280px ~ 364px) */
+        @media (max-width: 364px) {
+            .main h1 { font-size: 1.8rem; }
+            .main > img { width: 40px; top: 5px; right: 10px; }
+            .button { width: 100%; justify-content: center; } /* 버튼 꽉 차게 */
+            .card { padding: 15px; }
+        }
+
+        /* 2. 일반 모바일 (365px ~ 829px) */
+        @media (min-width: 365px) and (max-width: 829px) {
+            .main h1 { font-size: 2.2rem; }
+            .grid { grid-template-columns: 1fr; } /* 계속 1열 유지 */
+        }
+
+        /* 3. 태블릿 및 데스크탑 시작 (830px 이상) */
+        @media (min-width: 830px) {
+            .main h1 { font-size: 3.5rem; }
+            .grid { grid-template-columns: repeat(2, 1fr); } /* 2열 배치 */
+            .main > img { width: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="main">
+        <img class="logo" src="logo.png" alt="logo">
+        <h1 contenteditable="true">캐릭터</h1>
+        <h1 class="title-gold" contenteditable="true">프리미엄 육성회</h1>
+        <p contenteditable="true">
+최고의 효율과 안전을 약속하는 프리미엄 육성 서비스입니다.
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="button kkaddok"><img src="kakaotalk.png">카카오톡 문의</a>
+        </div>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <h2 class="golden" contenteditable="true">서비스 소개</h2>
+            <p contenteditable="true">
+같은 동남아라고 다 똑같지 않습니다.<br>
+어디서 망고따고 바나나따고 하던 어중이 떠중이 데려다 일시키지 않습니다.<br>
+던파, 메이플, 리니지클래식으로 이어지는 10년차 게임으로 밥먹고 사는 엄선된 직원만 근무 합니다.<br>
+모든 계정은 1:1 전담 직원이 근무 합니다.<br>
+일용직 직원 채용 하지 않습니다.
+			</p>
+        </div>
+
+        <div class="card">
+            <h2 class="golden" contenteditable="true">시간 비용</h2>
+			<ul contenteditable="true">
+                <li>비용은 10시간</li>
+                <li>육성은 12시간~</li>
+                <li>클래스별 육성비는 10시간으로 계산</li>
+                <li>육성 시간은 10시간 + @ 서비스 타임제공</li>
+				<li>PC방 비용은 별도 계산</li>
+            </ul>
+            <p contenteditable="true">
+
+			</p>
+        </div>
+
+        <div class="card">
+            <h2 class="golden" contenteditable="true">육성 회비</h2>
+            <ul contenteditable="true">
+                <li>기사 : 1시간 1,200원</li>
+                <li>요정 : 1시간 2,200원</li>
+                <li>법사 : 1시간 3,200원</li>
+                <li>군주 : 1시간 2,200원</li>
+            </ul>
+            <p contenteditable="true">
+※ 피시방 비용은 별도 입니다.(1시간 1,000원)<br>
+육성비는 월간 구독의 개념 선불입니다.<br>
+비용은 10시간, 육성 시간은 12시간<br>
+(피시방 비용은 별도 계산입니다.)<br>
+클래스별 육성비는 10시간으로 계산<br>
+육성 시간은 10시간 + @ 서비스 타임제공<br>
+피시방 비용은 11일,21일,31일 마다 후불 입니다.<br>
+피시방 비용은 리니지를 실행 시킨 시간만 체크 됩니다.<br>
+월간 구독 개념으로 + @ 서비스 타임 제공의 이유는 사람이 하는 일인지라 일정상의 미미한 차질에대한 이해를 해주십사하기 위함입니다.<br>
+서버 점검, 임시 점검, 간혹 있는 직원의 휴무 등에 대한 세심한 배려를 부탁드립니다.<br>
+그렇다고 하여 근무 기준에서 크게 벗어나진 않습니다.<br>
+문제가 될 만큼의 차질이 있는 경우 차액 환불 해드립니다.
+			</p>
+        </div>
+
+        <div class="card">
+            <h2 class="golden" contenteditable="true">작업 안내</h2>
+            <p contenteditable="true">
+PC방에서 로그인 합니다.<br>
+PC는 24시간 ON.<br>
+오직 본주님 케릭만 로그인 하는 전용 좌석 입니다.<br>
+일반 지피방 아닙니다.<br>
+(퍼플과 동일한 기반의 원격 사용)<br>
+주 사냥터는 PC방 본던 5~7층, 사던4층, 에바왕국 입니다.<br>
+최소 8,9검 5,6셋 이상 부터 가능합니다.<br>
+1시간 평균 1만 아데나 정도의 소모품 비용은(HP) 본주님 부담입니다.<br>
+각 클래스별 용기, 악마의피, 엘븐와퍼 비용은 본주님 부담입니다.<br>
+(요정 클래스 윈드워크 사용시 와퍼는 본주님 희망에 따릅니다.)<br>
+클래식샵 상품 포션을 사용하는 경우 별도의 아데나 필요하지 않습니다.<br>
+획득하는 아데나 및 아이템은 전부 사무실 귀속입니다.<br>
+PC방 깃털 및 이벤트 보상 등은 전부 본주님 귀속입니다.<br>
+케릭터 사망시 즉시 복구 처리 합니다.<br>
+복구비용은 사무실 부담입니다.
+			</p>
+        </div>
+
+        <div class="card">
+            <h2 class="golden" contenteditable="true">부가 서비스</h2>
+            <p contenteditable="true">
+본주님 희망에 따라 근무 마감시, ATS ON 가능합니다.<br>
+PC방 접속 상태에서 NC 스트리밍 서비스 사용 가능.<br>
+지피방과 같은 개념으로 본주님이 개인적으로 사용 가능합니다.<br>
+일반 지피방과 같은 지피방 접속 지연 발생 없습니다.<br>
+직원근무시간+ATS사용시간+본주님사용시간을 합산하여 PC방비는 계산됩니다.
+			</p>
+        </div>
+
+        <div class="card">
+            <h2 class="golden" contenteditable="true">기타</h2>
+            <p contenteditable="true">
+※ 야간 진행 불가능<br>
+(직접 관리를 위해 야간은 진행 하지 않습니다.)<br>
+※ 한국시간 오전8시~새벽2시 내 조정 가능
+			</p>
+        </div>
+    </div>
+
+    <footer style="margin-top: 100px; opacity: 0.5; font-size: 0.8rem; padding-bottom: 50px;">
+        <p contenteditable="true">©루씨캐릭터육성회. All Rights Reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
